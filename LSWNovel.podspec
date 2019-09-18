@@ -15,7 +15,7 @@ spec.source       = { :git => "https://github.com/yipainbingxin/LSWNovel.git", :
 spec.vendored_frameworks = 'LSWNovel.framework'  #你的SDK路径（因为传的是静态库，这个必须要）
 
 
-spec.resources = "Resources/*.png"
+spec.resources = "Resource.bundle"
 
 
 
