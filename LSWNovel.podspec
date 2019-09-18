@@ -1,137 +1,48 @@
-#
-#  Be sure to run `pod spec lint LSWNovel.podspec' to ensure this is a
-#  valid spec and to remove all comments including this before submitting the spec.
-#
-#  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
-#  To see working Podspecs in the CocoaPods repo see https://github.com/CocoaPods/Specs/
-#
-
 Pod::Spec.new do |spec|
-
-  # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  These will help people to find your library, and whilst it
-  #  can feel like a chore to fill in it's definitely to your advantage. The
-  #  summary should be tweet-length, and the description more in depth.
-  #
-
-  spec.name         = "LSWNovel"
-  spec.version      = "0.0.1"
-  spec.summary      = "A short description of LSWNovel."
-
-  # This description is used to generate tags and improve search results.
-  #   * Think: What does it do? Why did you write it? What is the focus?
-  #   * Try to keep it short, snappy and to the point.
-  #   * Write the description between the DESC delimiters below.
-  #   * Finally, don't worry about the indent, CocoaPods strips it!
-  spec.description  = <<-DESC
-                   DESC
-
-  spec.homepage     = "http://EXAMPLE/LSWNovel"
-  # spec.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+# ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+spec.name         = "LSWNovel" #名称
+spec.version      = "1.0.0" #版本号
+spec.summary      = "乐书屋小说SDK" #简介
+spec.description  = "乐书屋小说SDK对接文档"#描述
+spec.homepage     = "https://github.com/yipainbingxin/LSWNovel"#项目主页地址
+spec.license      = "MIT"#许可证
+spec.author             = { "yipainbingxin" => "472331078@qq.com" } #作者
+# ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+spec.platform     = :ios, "8.0"  #支持最小系统版本
+spec.source       = { :git => "https://github.com/yipainbingxin/LSWNovel.git", :tag => spec.version }  #项目的地址 （注意这里的tag位置，可以自己写也可以直接用s.version，但是与s.version一定要统一）
+# ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
+#spec.source_files  = 'QiYouFNovel.framework/Headers/*.{h,m}'#需要包含的源文件（也是个坑）按照你的文件层级来
+spec.vendored_frameworks = 'LSWNovel.framework'  #你的SDK路径（因为传的是静态库，这个必须要）
 
 
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See https://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
-  spec.license      = "MIT (example)"
-  # spec.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+ spec.resource  = "icon.png"
+spec.resources = "Resources/*.png"
 
 
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
 
-  spec.author             = { " +" => "472331078@qq.com" }
-  # Or just: spec.author    = " +"
-  # spec.authors            = { " +" => "472331078@qq.com" }
-  # spec.social_media_url   = "https://twitter.com/ +"
+spec.frameworks = "Foundation", "UIKit"#依赖库
+spec.dependency 'AFNetworking', '~> 3.1.0'
+spec.dependency 'UIImage+Additions', '~> 2.1.0'
+spec.dependency 'FMDB'
+spec.dependency 'Colours', '~> 5.13.0'
+spec.dependency 'Masonry', '~> 1.0.2'
+spec.dependency 'IQKeyboardManager', '5.0.4'
+spec.dependency 'MJRefresh', '~> 3.1.15.3'
+spec.dependency 'FSTextView', '~> 1.2'
+spec.dependency 'SVProgressHUD', '~> 2.1.2'
+spec.dependency 'MJExtension'
+spec.dependency 'YTKNetwork'
+spec.dependency 'pop', '~> 1.0'
+spec.dependency 'DZNEmptyDataSet'
+spec.dependency 'JVFloatLabeledTextField'
+spec.dependency 'dsBridge', '~> 3.0.2'
+spec.dependency 'SSZipArchive', '~> 2.2.2'
+spec.dependency 'Reachability', '~> 3.2'
+spec.dependency 'SDCycleScrollView', '~> 1.80'
+spec.dependency 'ReactiveObjC'
 
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
-  spec.source       = { :git => "http://EXAMPLE/LSWNovel.git", :tag => "#{spec.version}" }
-
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # spec.resource  = "icon.png"
-  # spec.resources = "Resources/*.png"
-
-  # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
-  # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Link your library with frameworks, or libraries. Libraries do not include
-  #  the lib prefix of their name.
-  #
-
-  # spec.framework  = "SomeFramework"
-  # spec.frameworks = "SomeFramework", "AnotherFramework"
-
-  # spec.library   = "iconv"
-  # spec.libraries = "iconv", "xml2"
-
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # spec.requires_arc = true
-
-  # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # spec.dependency "JSONKit", "~> 1.4"
+#依赖的第三方，有几个写几个
 
 end
+
+
