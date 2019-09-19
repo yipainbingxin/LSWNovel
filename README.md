@@ -16,25 +16,22 @@ pod 'LSWNovel', '~> 1.0.0'
 
 依赖库:安装LSWNovel时会自动安装集成，无需自己手动安装
  ```
+
    pod 'AFNetworking', '~> 3.1.0'
    pod 'UIImage+Additions', '~> 2.1.0'
-   pod 'FMDB'
-   pod 'Colours', '~> 5.13.0'
    pod 'Masonry', '~> 1.0.2'
    pod 'IQKeyboardManager', '5.0.4'
    pod 'MJRefresh', '~> 3.1.15.3'
    pod 'FSTextView', '~> 1.2'
    pod 'SVProgressHUD', '~> 2.1.2'
    pod 'MJExtension'
-   pod 'YTKNetwork'
-   pod 'pop', '~> 1.0'
    pod 'DZNEmptyDataSet'
-   pod 'JVFloatLabeledTextField'
    pod 'dsBridge', '~> 3.0.2'
-   pod 'SSZipArchive', '~> 2.2.2'
    pod 'Reachability', '~> 3.2'
    pod 'SDCycleScrollView', '~> 1.80'
-   pod 'ReactiveObjC' 
+   pod 'ReactiveObjC'
+   pod 'Colours', '~> 5.13.0'
+   
    ```
  
  
