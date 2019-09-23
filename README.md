@@ -65,12 +65,13 @@ pod 'LSWNovel', '~> 1.0.3'
  
  
  4.  push出显示小说界面
-   ```
+ ```
     /**
  push出乐书屋小说
  @param homeClass 当前的导航控制前
  */
 + (void)presetHomeVC:(UINavigationController*) homeClass;
-    ```
+
+ ```
  
  
