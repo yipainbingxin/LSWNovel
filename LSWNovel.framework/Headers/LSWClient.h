@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LSWClient : NSObject
-+ (void)initWithAppkey:(NSString *)appKey withAppSecret:(NSString *)appSecret;
++ (void)initWithAppkey:(NSString *)appKey withAppSecret:(NSString *)appSecret withUserCode:(NSString*)user_code;
 + (void)presetHomeVC:(UINavigationController*) homeClass;
 
 
