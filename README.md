@@ -10,7 +10,7 @@
 
 代码
 ```
-pod 'LSWNovel', '~> 1.0.0'
+pod 'LSWNovel', '~> 1.0.2'
 
 ```
 
@@ -26,11 +26,11 @@ pod 'LSWNovel', '~> 1.0.0'
    pod 'SVProgressHUD', '~> 2.1.2'
    pod 'MJExtension'
    pod 'DZNEmptyDataSet'
-   pod 'dsBridge', '~> 3.0.2'
    pod 'Reachability', '~> 3.2'
    pod 'SDCycleScrollView', '~> 1.80'
    pod 'ReactiveObjC'
    pod 'Colours', '~> 5.13.0'
+   pod 'dsBridge', '~> 3.0.2'
    
    ```
  
