@@ -45,7 +45,8 @@ pod 'LSWNovel', '~> 1.0.0'
  
  2. APPdelegate中初始化SDK
  ```
-     [LSWClient initWithAppkey:@"" withAppSecret:@""];
+     [LSWClient initWithAppkey:@"" withAppSecret:@"" withUserCode:@"";
+];
 
  ```
  
