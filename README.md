@@ -8,9 +8,9 @@
 
 #### 二、环境配置
 
-1、打开项目xcode，找到项目的plist文件，在Info.plist中添加NSAppTransportSecurity类型Dictionary。
+> 1、打开项目xcode，找到项目的plist文件，在Info.plist中添加NSAppTransportSecurity类型Dictionary。
 
-2、在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES
+> 2、在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES
 
 #### 三、cocoapods集成
 
