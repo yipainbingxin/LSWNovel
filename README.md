@@ -53,7 +53,8 @@ pod 'LSWNovel', '~> 1.0.3'
 + (void)initWithAppid:(NSString *)appid withAppSecret:(NSString *)appSecret;
 
  ```
- 3.设置用户ID
+ 3.阅读奖励设置指南
+ 请联系商务开通阅读激励。
  ```
  /**
  设置用户标识
@@ -62,6 +63,31 @@ pod 'LSWNovel', '~> 1.0.3'
 + (void)initUsercode:(NSString*)user_code;
 
  ```
+ 回调接口
+**GET** http://xxx.xx?user_code=1&award_amount=100
+
+|  参数 | 描述 |
+| :-  | :-  |
+| url | 回调奖励金地址（后台填写） |
+| user_code | 用户唯一标识 |
+| award_amount | 奖励金额（后台填写） |
+
+```
+返回成功结果示例： 
+{
+    "code":200,
+    "msg":"成功",
+    "err":""
+}
+返回失败结果示例:
+{
+    "code":-1,
+    "msg":"失败",
+    "err":"用户标识不存在"
+}
+
+```
+**注意返回结果请按给定格式返回，否则用户无法收到奖励**
  
  
  4.  push出显示小说界面
