@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 spec.name         = "LSWNovel" #名称
-spec.version      = "1.0.3" #版本号
+spec.version      = "1.0.4" #版本号
 spec.summary      = "乐书屋小说SDK" #简介
 spec.description  = "乐书屋小说SDK对接文档"#描述
 spec.homepage     = "https://github.com/yipainbingxin/LSWNovel"#项目主页地址
@@ -21,16 +21,16 @@ spec.resources = "Resource.bundle"
 
 spec.frameworks = "Foundation", "UIKit"#依赖库
 
-spec.dependency 'AFNetworking', '~> 3.1.0'
-spec.dependency 'UIImage+Additions', '~> 2.1.0'
-spec.dependency 'Masonry', '~> 1.0.2'
-spec.dependency 'IQKeyboardManager', '5.0.4'
-spec.dependency 'MJRefresh', '~> 3.1.15.3'
-spec.dependency 'FSTextView', '~> 1.2'
-spec.dependency 'SVProgressHUD', '~> 2.1.2'
+spec.dependency 'AFNetworking', '~> 3.2.1'
+spec.dependency 'UIImage+Additions', '~> 2.1.4'
+spec.dependency 'Masonry', '~> 1.1.0'
+spec.dependency 'IQKeyboardManager', '6.4.2'
+spec.dependency 'MJRefresh', '~> 3.2.0'
+spec.dependency 'FSTextView', '~> 1.8'
+spec.dependency 'SVProgressHUD', '~> 2.2.5'
 spec.dependency 'MJExtension'
 spec.dependency 'DZNEmptyDataSet'
-spec.dependency 'dsBridge', '~> 3.0.2'
+spec.dependency 'dsBridge', '~> 3.0.6'
 spec.dependency 'Reachability', '~> 3.2'
 spec.dependency 'SDCycleScrollView', '~> 1.80'
 spec.dependency 'ReactiveObjC'
