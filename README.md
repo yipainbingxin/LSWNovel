@@ -6,11 +6,17 @@
 暂不支持后台获取，请联系商务获取您的appid和appsecret
 
 
-#### 二、cocoapods集成
+#### 二、环境配置
+
+> 1、打开项目xcode，找到项目的plist文件，在Info.plist中添加NSAppTransportSecurity类型Dictionary。
+
+> 2、在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES
+
+#### 三、cocoapods集成
 
 代码
 ```
-pod 'LSWNovel', '~> 1.0.3'
+pod 'LSWNovel', '~> 1.0.4'
 
 ```
 
@@ -35,7 +41,7 @@ pod 'LSWNovel', '~> 1.0.3'
    ```
  
  
- ### 三、代码集成
+ ### 四、代码集成
 
  1. 导入头文件
   ```
