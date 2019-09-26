@@ -12,6 +12,23 @@
 
 > 2、在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES
 
+>3、info.plist 第三方支付 添加URL Schemes白名单
+ ```
+<key>LSApplicationQueriesSchemes</key>
+ <array>
+    <!-- 微信 URL Scheme 白名单-->
+    <string>wechat</string>
+    <string>weixin</string>
+
+    <!-- 支付宝  URL Scheme 白名单-->
+    <string>alipay</string>
+    <string>alipayshare</string>
+</array>
+```
+
+>4、添加URLURL types
+
+
 #### 三、cocoapods集成
 
 代码
@@ -59,7 +76,17 @@ pod 'LSWNovel', '~> 1.0.4'
 + (void)initWithAppid:(NSString *)appid withAppSecret:(NSString *)appSecret;
 
  ```
- 3.阅读奖励设置指南
+ 
+ 
+ 3.APPdelegate中代理方法openURL中传URL用于处理支付结果
+ ```
+ /**
+处理收到的 URL 消息
+ @param url url
+ */
++ (void)handleOpenUrl:(NSURL *)url;
+```
+ 4.阅读奖励设置指南
  请联系商务开通阅读激励。
  ```
  /**
