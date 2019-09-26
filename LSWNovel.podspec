@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 spec.name         = "LSWNovel" #名称
-spec.version      = "1.0.5" #版本号
+spec.version      = "1.0.6" #版本号
 spec.summary      = "乐书屋小说SDK" #简介
 spec.description  = "乐书屋小说SDK对接文档"#描述
 spec.homepage     = "https://github.com/yipainbingxin/LSWNovel"#项目主页地址
