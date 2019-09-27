@@ -26,6 +26,10 @@
 </array>
 ```
 
+>4、添加URL types用于APP返回
+identifier 名字随意例如weixinpay
+URL Schemes为www.ysgtg.com
+
 #### 三、cocoapods集成
 
 代码
