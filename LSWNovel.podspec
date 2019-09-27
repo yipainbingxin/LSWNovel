@@ -11,7 +11,7 @@ spec.author             = { "yipainbingxin" => "472331078@qq.com" } #作者
 spec.platform     = :ios, "8.0"  #支持最小系统版本
 spec.source       = { :git => "https://github.com/yipainbingxin/LSWNovel.git", :tag => spec.version }  #项目的地址 （注意这里的tag位置，可以自己写也可以直接用s.version，但是与s.version一定要统一）
 # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-spec.source_files  = 'QiYouFNovel.framework/*.{h,m}'#需要包含的源文件（也是个坑）按照你的文件层级来
+#spec.source_files  = 'QiYouFNovel.framework/*.{h,m}'#需要包含的源文件（也是个坑）按照你的文件层级来
 spec.vendored_frameworks = 'LSWNovel.framework'  #你的SDK路径（因为传的是静态库，这个必须要）
 
 
