@@ -25,6 +25,7 @@
     <string>alipayshare</string>
 </array>
 ```
+![Image text](https://note.youdao.com/yws/public/resource/10f99fa54fd4fcc542d88169fc3194bd/xmlnote/WEBRESOURCE6e6063b839bbd96b7bc0f224c5dcbff6/209)
  
 >4、添加 ``` URL types ``` 用于APP返回
 identifier名字随意例如
@@ -36,6 +37,7 @@ URL Schemes:
 www.ysgtg.com
 
 ```
+![Image text](https://note.youdao.com/yws/public/resource/a12ca50e7041f1da1336dae15e262c3b/xmlnote/WEBRESOURCE21b6746ccc6b6040c69fe8588cd29c62/201)
 
 #### 三、cocoapods集成
 
