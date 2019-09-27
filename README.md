@@ -26,9 +26,6 @@
 </array>
 ```
 
->4、添加URLURL types
-
-
 #### 三、cocoapods集成
 
 代码
