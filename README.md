@@ -29,10 +29,7 @@
 ![Image text](https://note.youdao.com/yws/public/resource/10f99fa54fd4fcc542d88169fc3194bd/xmlnote/WEBRESOURCE6e6063b839bbd96b7bc0f224c5dcbff6/209)
  
 >4、添加 ``` URL types ``` 用于APP返回
-identifier名字随意例如
-``` 
-weixinpay 
-```
+identifier名字随意例如weixinpay
 URL Schemes:
 ```
 www.ysgtg.com
