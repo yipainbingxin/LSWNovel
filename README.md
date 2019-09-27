@@ -25,10 +25,17 @@
     <string>alipayshare</string>
 </array>
 ```
+ 
+>4、添加 ``` URL types ``` 用于APP返回
+identifier名字随意例如
+``` 
+weixinpay 
+```
+URL Schemes:
+```
+www.ysgtg.com
 
->4、添加URL types用于APP返回
-identifier 名字随意例如weixinpay
-URL Schemes为www.ysgtg.com
+```
 
 #### 三、cocoapods集成
 
