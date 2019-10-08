@@ -36,7 +36,7 @@ www.ysgtg.com
 
 ```
 ##### 如图所示：
-![Image text](https://note.youdao.com/yws/public/resource/c5e565d31b883e12a1414583aeda7475/xmlnote/WEBRESOURCE5d344468c9be99917cddae07a9a38167/543)
+![Image text](https://note.youdao.com/yws/public/resource/c5e565d31b883e12a1414583aeda7475/xmlnote/WEBRESOURCE7652eb7bf6e6ccd81c319bb4f5251fa6/546)
 
 #### 三、cocoapods集成
 
