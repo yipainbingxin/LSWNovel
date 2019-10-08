@@ -42,7 +42,7 @@ www.ysgtg.com
 
 代码
 ```
-pod 'LSWNovel', '~> 1.0.4'
+pod 'LSWNovel'
 
 ```
 
