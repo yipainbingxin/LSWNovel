@@ -46,24 +46,10 @@ pod 'LSWNovel'
 
 ```
 
-依赖库:安装LSWNovel时会自动安装集成，无需自己手动安装
+相关依赖库:安装LSWNovel时会自动安装集成，无需自己手动安装
  ```
-
-   pod 'AFNetworking', '~> 3.2.1'
-   pod 'UIImage+Additions', '~> 2.1.4'
-   pod 'Masonry', '~> 1.1.0'
-   pod 'IQKeyboardManager', '6.4.2'
-   pod 'MJRefresh', '~> 3.2.0'
-   pod 'FSTextView', '~> 1.8'
-   pod 'SVProgressHUD', '~> 2.2.5'
-   pod 'MJExtension'
-   pod 'DZNEmptyDataSet'
-   pod 'Reachability', '~> 3.2'
-   pod 'SDCycleScrollView', '~> 1.80'
-   pod 'ReactiveObjC'
-   pod 'Colours', '~> 5.13.0'
-   pod 'dsBridge', '~> 3.0.6'
-   
+ AFNetworking、UIImage+Additions、Masonry、IQKeyboardManager、MJRefresh、FSTextView、SVProgressHUD、MJExtension、DZNEmptyDataSet、Reachability、SDCycleScrollView、ReactiveObjC、Colours、dsBridge
+ 
    ```
  
  
